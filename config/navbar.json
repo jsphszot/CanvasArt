@@ -1,0 +1,28 @@
+{
+    "navbar": [
+        {
+            "txt": "Home",
+            "href": "/index.html"
+        },
+        {
+            "txt": "Cervezas",
+            "href": "/Cervezas.html"
+        },
+        {
+            "txt": "Brewpub",
+            "href": "/Brewpub.html"
+        },
+        {
+            "txt": "Encuéntranos",
+            "href": "/Encuentranos.html"
+        },
+        {
+            "txt": "Nosotros",
+            "href": "/Nosotros.html"
+        },
+        {
+            "txt": "Tienda",
+            "href": "https://tienda.szot.cl/"
+        }
+    ]
+}

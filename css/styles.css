@@ -1,0 +1,78 @@
+/* Settings for whole webpage --------------------- */
+/* https://www.freecodecamp.org/news/html-page-width-height/ */
+* {
+    /* remove default margins and padding */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Navbar */
+#navbar {
+    background: rgb(255, 110, 199, 0.411);
+    width: 100%;
+    font-size: 2.5vh;
+    font-weight: bold;
+
+}
+#navbar ul {
+    margin: auto;
+    padding: 0;
+    /* height: 100%; */
+    /* max-width: 70%; */
+    display: flex;
+    text-align: center;
+}
+#navbar a {
+    color: rgb(41, 39, 39);
+    display: block;
+    text-decoration: none;
+}
+
+.menu-li {
+    width: 100%;
+    height: 100%;
+    list-style-type:none;
+    /* padding: 1vh 2vh; */
+}
+.menu-li:hover {
+    background-color: rgb(149, 204, 229);
+}
+#menu-button {
+    /* hide menu-button default behavior (gray hamb box) */
+    display: none;
+}
+
+/* Small Screens */
+@media only screen and (max-width: 900px){
+    /* Navbar */
+    #navbar {
+        font-size: 3vh;
+        background: rgb(255, 110, 199, 0.411);
+    }
+    #navbar ul {
+        display: block;
+    }
+    .menu-li {
+        width: 100%;
+        margin: 0;
+        display: none;
+        padding: 5vh 0;
+    }
+    #nav-bar a {
+        display: block;
+    }
+    #menu-button {
+        display: block;
+        min-width: 55px;
+        min-height: 55px;
+        background-color: #745daa;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        /*put button to left*/
+        /* align-self: flex-start;  */
+    }
+}
