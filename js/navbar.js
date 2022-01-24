@@ -1,5 +1,6 @@
 var menu_button = document.getElementById("menu-button");
 var navbar = document.getElementById("navbar");
+var mainbod = document.getElementById("mainbod");
 var nav_ul = document.querySelector("nav ul");
 var menu_li = document.getElementsByClassName("menu-li");
 
@@ -17,18 +18,27 @@ function HideLoop(loopject) {
 };
 function OpenM() {
     menu_button.textContent = "🞬";
+    // navbar.style.height = "100vh";
     navbar.style.height = "100vh";
+    navbar.style.width = "100vw";
+    
+    mainbod.style.display='none';
+
     ShowLoop(menu_li, d_style=false);
     // mainbod.style.display = 'none'
 };
 function CloseM(hide=true) {
     menu_button.textContent = "☰";
     navbar.style.height = "";
+    mainbod.style.display='';
+
     (hide === true) ? HideLoop(menu_li) : ShowLoop(menu_li);
     // mainbod.style.display = ''
 };
 
 function OpenCloseMenu(){
+    var windW = document.documentElement.clientWidth;
+    navbar.clientWidth = windW;
     if (menu_button.textContent == "☰"){
         OpenM();
     } else {
