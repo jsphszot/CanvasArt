@@ -137,13 +137,15 @@ function SetCanvas(){
     var windW = document.documentElement.clientWidth;
     var windH = document.documentElement.clientHeight;
 
+    // var navHeight = document.getElementById("navbar").clientHeight;
+    var navHeight = document.getElementById("navbar").clientHeight;
     // whole viewport including scrollbars
     // var windW = window.innerWidth;
     // var windH = window.innerHeight;
 
       // // // page dims
     window.canvasW = windW*CanvpercPage; 
-    window.canvasH = windH*CanvpercPage;
+    window.canvasH = windH*CanvpercPage-navHeight;
     
     // reset canvas width
     context.canvas.width = canvasW;
