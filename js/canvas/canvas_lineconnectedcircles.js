@@ -255,18 +255,22 @@ function SetCanvas(){
     var CanvpercPage = 1;
     // // // define W and H vars
     // // window dims, includes vertical scroll
-    var windW = window.innerWidth;
-    var windH = window.innerHeight;
+    var windW = document.documentElement.clientWidth;
+    var windH = document.documentElement.clientHeight;
+    
+    // whole viewport including scrollbars
+    // var windW = window.innerWidth;
+    // var windH = window.innerHeight;
     // // // page dims
-    const pageBody = document.body;
-    var pbW = pageBody.clientWidth;
-    var pbH = pageBody.clientHeight;
     window.canvasW = windW*CanvpercPage; 
     window.canvasH = windH*CanvpercPage;
     
+    // Getting the Width and Height of an Element: https://www.javascripttutorial.net/javascript-dom/javascript-width-height/
+    var navHeight = document.getElementById("navbar").clientHeight;
+    // var navHeight = 0;
     // reset canvas width
     context.canvas.width = canvasW;
-    context.canvas.height = canvasH;
+    context.canvas.height = canvasH-navHeight;
     
     // var Npoints = Math.round(Math.max(windW, windH)/50);
     var Npoints = 100;

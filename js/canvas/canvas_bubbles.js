@@ -131,19 +131,28 @@ function SetCanvas(){
     // var windW = window.innerWidth;
     // var windH = window.innerHeight;
     // // page dims
-    const pageBody = document.body;
-    var windW = pageBody.clientWidth;
-    var windH = pageBody.clientHeight;
-    var canvasW = windW*1; 
-    var canvasH = windH*1;
+    var CanvpercPage = 1;
+    // // // define W and H vars
+    // // window dims, includes vertical scroll
+    var windW = document.documentElement.clientWidth;
+    var windH = document.documentElement.clientHeight;
+
+    // whole viewport including scrollbars
+    // var windW = window.innerWidth;
+    // var windH = window.innerHeight;
+
+      // // // page dims
+    window.canvasW = windW*CanvpercPage; 
+    window.canvasH = windH*CanvpercPage;
     
     // reset canvas width
     context.canvas.width = canvasW;
     context.canvas.height = canvasH;
     
-    var Npoints = Math.round(Math.max(windW, windH)/15)
+    // var Npoints = Math.round(Math.max(windW, windH)/15)
+    var Npoints = 100;
     window.floating_agents = AgentPopulator(canvasW, canvasH, Npoints)
-
+    console.log(`wW: ${windW}, wH: ${windH} ::: Npoints ${Npoints}`)
     // draw_agents(); // call not neccesary
 }
 
