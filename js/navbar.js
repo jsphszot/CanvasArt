@@ -17,7 +17,8 @@ function HideLoop(loopject) {
        loopject[i].style.display = 'none';
 };
 function OpenM() {
-    menu_button.textContent = "🞬";
+    // menu_button.textContent = "🞬";
+    menu_button.textContent = "\u2715";
     // navbar.style.height = "100vh";
     navbar.style.height = "100vh";
     navbar.style.width = "100vw";
