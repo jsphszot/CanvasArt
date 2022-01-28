@@ -57,7 +57,7 @@ function CloseResized(){
 function fillNavbar(){
 
     // var config_array;
-    fetch("./config/navbar.json")
+    fetch("./json/navbar.json")
     .then(res => res.json())
     .then(data => obj = data)
     .then(() => fillNav(obj));
