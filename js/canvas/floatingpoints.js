@@ -2,7 +2,7 @@
 // https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 // coding challenge: https://www.youtube.com/watch?v=FWSR_7kZuYg
 // epic conway: https://www.youtube.com/watch?v=C2vgICfQawE
-import {ranRange} from "../utility_functions.js"
+import {ranRange, ToF} from "../utility_functions.js"
 
 var canvas = document.getElementById('canvas01');
 var context = canvas.getContext('2d');
@@ -11,8 +11,8 @@ var Npoints = 100;
 // var Npoints = Math.round(Math.max(windW, windH)/5);
 // var MaxRadius = Npoints/5; //  or 10 is cute, 50 is fine
 var MaxRadius = 20;
-var Marioesque=false;
-var ConnectedLines=false;
+var Marioesque=ToF();
+var ConnectedLines=ToF();
 
 // Classes ------------
 
