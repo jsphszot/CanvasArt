@@ -2,23 +2,23 @@
     "navbar": [
         {
             "txt": "Home",
-            "href": "/index.html"
+            "href": "index.html"
         },
         {
             "txt": "Cervezas",
-            "href": "/Cervezas.html"
+            "href": "Cervezas.html"
         },
         {
             "txt": "Brewpub",
-            "href": "/Brewpub.html"
+            "href": "Brewpub.html"
         },
         {
             "txt": "Encuéntranos",
-            "href": "/Encuentranos.html"
+            "href": "Encuentranos.html"
         },
         {
             "txt": "Nosotros",
-            "href": "/Nosotros.html"
+            "href": "Nosotros.html"
         },
         {
             "txt": "Tienda",
