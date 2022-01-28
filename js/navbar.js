@@ -56,8 +56,8 @@ function CloseResized(){
 // - - - - - - - -
 function fillNavbar(){
 
-    var config_array;
-    fetch("../config/navbar.json")
+    // var config_array;
+    fetch("./config/navbar.json")
     .then(res => res.json())
     .then(data => obj = data)
     .then(() => fillNav(obj));
@@ -69,9 +69,8 @@ function fillNavbar(){
         config_array.navbar.forEach((navlink) => {
             nav_li = `
             <li class='menu-li'>
-                <a href="${navlink.href}">${navlink.txt}</a>
-                </li>
-                `;
+            <a href="${navlink.href}">${navlink.txt}</a>
+            </li>`;
                 nav_ul.innerHTML += nav_li;
             })
         }
