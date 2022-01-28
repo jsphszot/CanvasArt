@@ -9,7 +9,7 @@
 
 // Setup ---------------------------------------------------
 
-import {degToRad, ranRange,} from "../utility_functions.js"
+import {degToRad, ranRange,} from "../../utility_functions.js"
 
 var canvas = document.getElementById("canvas01");
 var context = canvas.getContext("2d");
