@@ -44,6 +44,7 @@ function draw_grid(cols, rows, canvasW, canvasH) {
 
     }
 }
+
 // Run all functions inside --------------------------------
 function SetCanvas(){
 
